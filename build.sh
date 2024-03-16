@@ -3,6 +3,7 @@
 # Echo starting of building process
 echo "====================== building"
 # Build the Docker image
+chmod +x start.sh
 docker build -t bilalbens/${IMAGE_NAME} -f Dockerfile .
 
 # Check if CI_USER is not empty
